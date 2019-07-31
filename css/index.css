@@ -1,0 +1,55 @@
+.col{width:1080px;margin:0 auto;}
+/* 头部 */
+.header{height:40px;width:100%;line-height: 40px;color:#fff;padding:20px 0;position: absolute;top:0;left:0}
+.logo{float:left;}
+.nav{float:right;}
+.nav li{float:left;position: relative;}
+.nav li a{display: block;color:#fff;padding:0 20px}
+.layer{width:240px;height:204px;box-shadow: 0 6px 10px 0 rgba(0,0,0,.1);border-radius: 4px;background:#fff;position: absolute;top:40px;left:0;opacity: 0;transition: opacity .2s ease}
+.layer .arrow{border-width:5px;border-style: solid;border-color:transparent transparent white transparent;display: block;width:0;height:0;position: absolute;top:-10px;left:25px}
+.nav li:hover .layer{opacity: 1;}
+/* 文字层 */
+.header-txt{position: absolute;left:0;top:50%;width:100%}
+.header-txt .font-logo{font-size: 420%;line-height: 1;font-weight: bold;margin-bottom: 20px;animation: txt 4s linear infinite;}
+.header-txt .btn{display: inline-block;padding:14px 26px;font-size:22px;color:#fff;font-weight: bold;background:rgba(0,0,0,.6);border-radius:6px}
+@keyframes txt{
+    0%{color:#000}
+    20%{color:#000}
+    40%{color:#000}
+    60%{color:#fff}
+    80%{color:#fff}
+    100%{color:#fff}
+}
+/* 新闻 */
+.news{position: absolute;left:0;bottom:0;width:100%;background:rgba(0,0,0,.5);padding:10px;color:#fff}
+.news span{background: linear-gradient(to bottom, #ec614f 0%, #ff2e2e 100%);box-shadow:  0 1px 3px 0 rgba(0,0,0,.2);border-radius: 4px;display: inline-block}
+
+/* banner */
+
+html,body,
+.swiper-container,
+.swiper-wrapper,
+.swiper-slide{width:100%;height:100%;}
+.swiper-slide a{display: block;width:100%;height:100%;background:url(https://mobike.com/cn/assets/themes/moby/img/landing/hero-bg-3.jpg) no-repeat center;background-size: cover}
+
+/* 广告 */
+.heros-promos{margin-left:-2px;margin-top:2px}
+.heros-promos .hero{float:left;width:25%;height:260px;background-repeat:no-repeat;background-position: center;background-size: cover;border-left:2px solid #fff;box-sizing: border-box;font-size: 24px;font-weight: 400;text-align: center;padding:37px;color:#fff;}
+/* 福利模块 */
+.mate-links{width:100%;border-bottom:1px solid red}
+.mate-link{padding:45px 0;float:left;width:33.33%}
+.mate-link .icon{display: inline-block;width:50px;height:50px;margin-right:10px;background-repeat: no-repeat;background-position:center;background-size: contain;vertical-align:middle}
+.mate-link .txt{display: inline-block;text-align: left}
+/* PAD端 */
+@media screen and (max-width:1080px){
+    .heros-promos .hero{width:50%}
+    .col{width:auto;padding:0 20px}
+    .nav{display: none}
+}
+/* 手机端 */
+@media screen and (max-width:640px){
+    .heros-promos .hero{width:100%}
+    .mate-link{width:50%;text-align: left}
+    .mate-link2,.mate-lin3{text-align: left}
+}
+
